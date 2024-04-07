@@ -10,6 +10,7 @@
 		167214462BC0531800DC716B /* Model3DExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167214452BC0531800DC716B /* Model3DExampleView.swift */; };
 		1672144A2BC0693000DC716B /* mega_man.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 167214492BC0693000DC716B /* mega_man.usdz */; };
 		1672144C2BC0839800DC716B /* mega_man.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 1672144B2BC0839800DC716B /* mega_man.HEIC */; };
+		167214512BC3152800DC716B /* Model3DRotatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167214502BC3152800DC716B /* Model3DRotatingView.swift */; };
 		16B161142BBB70E8007BEA9E /* Presenting3DContentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B161132BBB70E8007BEA9E /* Presenting3DContentApp.swift */; };
 		16B161162BBB70E9007BEA9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B161152BBB70E9007BEA9E /* ContentView.swift */; };
 		16B161182BBB70E9007BEA9E /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B161172BBB70E9007BEA9E /* ImmersiveView.swift */; };
@@ -33,6 +34,7 @@
 		167214452BC0531800DC716B /* Model3DExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3DExampleView.swift; sourceTree = "<group>"; };
 		167214492BC0693000DC716B /* mega_man.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = mega_man.usdz; sourceTree = "<group>"; };
 		1672144B2BC0839800DC716B /* mega_man.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = mega_man.HEIC; sourceTree = "<group>"; };
+		167214502BC3152800DC716B /* Model3DRotatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3DRotatingView.swift; sourceTree = "<group>"; };
 		16B1610C2BBB70E8007BEA9E /* Presenting3DContent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presenting3DContent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B161132BBB70E8007BEA9E /* Presenting3DContentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenting3DContentApp.swift; sourceTree = "<group>"; };
 		16B161152BBB70E9007BEA9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		167214522BC3158600DC716B /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				167214452BC0531800DC716B /* Model3DExampleView.swift */,
+				167214502BC3152800DC716B /* Model3DRotatingView.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
 		16B161032BBB70E8007BEA9E = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +100,7 @@
 				16B161132BBB70E8007BEA9E /* Presenting3DContentApp.swift */,
 				16B161152BBB70E9007BEA9E /* ContentView.swift */,
 				16B161172BBB70E9007BEA9E /* ImmersiveView.swift */,
-				167214452BC0531800DC716B /* Model3DExampleView.swift */,
+				167214522BC3158600DC716B /* Examples */,
 				16B161192BBB70E9007BEA9E /* ImageBasedLighting.skybox */,
 				16B1611B2BBB70EA007BEA9E /* Assets.xcassets */,
 				16B161202BBB70EA007BEA9E /* Info.plist */,
@@ -237,6 +248,7 @@
 			files = (
 				16B161162BBB70E9007BEA9E /* ContentView.swift in Sources */,
 				16B161142BBB70E8007BEA9E /* Presenting3DContentApp.swift in Sources */,
+				167214512BC3152800DC716B /* Model3DRotatingView.swift in Sources */,
 				16B161182BBB70E9007BEA9E /* ImmersiveView.swift in Sources */,
 				167214462BC0531800DC716B /* Model3DExampleView.swift in Sources */,
 			);

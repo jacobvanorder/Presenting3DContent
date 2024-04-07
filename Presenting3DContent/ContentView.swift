@@ -21,11 +21,19 @@ struct ContentView: View {
     @State var eventSubscriptions: [EventSubscription] = []
 
     var body: some View {
-        HStack {
+        HStack(spacing: 40) {
             VStack {
                 Model3DExampleView(named: "mega_man")
                     .frame(width: 200, height: 200)
                 Text("Model 3D")
+                    .font(.largeTitle)
+            }
+            VStack {
+                Model3DRotatingView(named: "mega_man") {
+                    ProgressView()
+                }
+                    .frame(width: 200, height: 200)
+                Text("Model 3D Rotation")
                     .font(.largeTitle)
             }
         }
