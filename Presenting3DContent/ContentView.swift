@@ -1,3 +1,9 @@
+
+
+
+
+
+
 //
 //  ContentView.swift
 //  Presenting3DContent
@@ -7,30 +13,22 @@
 
 import SwiftUI
 import RealityKit
-import RealityKitContent
+import Combine
 
 struct ContentView: View {
-
-    @State private var showImmersiveSpace = false
-    @State private var immersiveSpaceIsShown = false
-
-    @Environment(\.openImmersiveSpace) var openImmersiveSpace
-    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
+    
+    @State var depth: Double = 0.0
+    @State var eventSubscriptions: [EventSubscription] = []
 
     var body: some View {
-        VStack {
-            Model3D(named: "Scene", bundle: realityKitContentBundle)
-                .padding(.bottom, 50)
-
-            Text("Hello, world!")
-
-            Toggle("Show ImmersiveSpace", isOn: $showImmersiveSpace)
-                .font(.title)
-                .frame(width: 360)
-                .padding(24)
-                .glassBackgroundEffect()
+        HStack {
+            VStack {
+                Model3DExampleView(named: "mega_man")
+                    .frame(width: 200, height: 200)
+                Text("Model 3D")
+                    .font(.largeTitle)
+            }
         }
-        .padding()
         .onChange(of: showImmersiveSpace) { _, newValue in
             Task {
                 if newValue {
@@ -50,8 +48,14 @@ struct ContentView: View {
             }
         }
     }
+    
+    @State private var showImmersiveSpace = false
+    @State private var immersiveSpaceIsShown = false
+
+    @Environment(\.openImmersiveSpace) var openImmersiveSpace
+    @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 }
 
-#Preview(windowStyle: .automatic) {
+#Preview(windowStyle: .plain) {
     ContentView()
 }

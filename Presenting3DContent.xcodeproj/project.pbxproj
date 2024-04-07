@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16B161122BBB70E8007BEA9E /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 16B161112BBB70E8007BEA9E /* RealityKitContent */; };
+		167214462BC0531800DC716B /* Model3DExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167214452BC0531800DC716B /* Model3DExampleView.swift */; };
+		1672144A2BC0693000DC716B /* mega_man.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 167214492BC0693000DC716B /* mega_man.usdz */; };
+		1672144C2BC0839800DC716B /* mega_man.HEIC in Resources */ = {isa = PBXBuildFile; fileRef = 1672144B2BC0839800DC716B /* mega_man.HEIC */; };
 		16B161142BBB70E8007BEA9E /* Presenting3DContentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B161132BBB70E8007BEA9E /* Presenting3DContentApp.swift */; };
 		16B161162BBB70E9007BEA9E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B161152BBB70E9007BEA9E /* ContentView.swift */; };
 		16B161182BBB70E9007BEA9E /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B161172BBB70E9007BEA9E /* ImmersiveView.swift */; };
@@ -28,8 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		167214452BC0531800DC716B /* Model3DExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model3DExampleView.swift; sourceTree = "<group>"; };
+		167214492BC0693000DC716B /* mega_man.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = mega_man.usdz; sourceTree = "<group>"; };
+		1672144B2BC0839800DC716B /* mega_man.HEIC */ = {isa = PBXFileReference; lastKnownFileType = file; path = mega_man.HEIC; sourceTree = "<group>"; };
 		16B1610C2BBB70E8007BEA9E /* Presenting3DContent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Presenting3DContent.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		16B161102BBB70E8007BEA9E /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		16B161132BBB70E8007BEA9E /* Presenting3DContentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenting3DContentApp.swift; sourceTree = "<group>"; };
 		16B161152BBB70E9007BEA9E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		16B161172BBB70E9007BEA9E /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
@@ -46,7 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16B161122BBB70E8007BEA9E /* RealityKitContent in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,9 +85,11 @@
 		16B1610E2BBB70E8007BEA9E /* Presenting3DContent */ = {
 			isa = PBXGroup;
 			children = (
+				16B161332BBB711E007BEA9E /* Assets */,
 				16B161132BBB70E8007BEA9E /* Presenting3DContentApp.swift */,
 				16B161152BBB70E9007BEA9E /* ContentView.swift */,
 				16B161172BBB70E9007BEA9E /* ImmersiveView.swift */,
+				167214452BC0531800DC716B /* Model3DExampleView.swift */,
 				16B161192BBB70E9007BEA9E /* ImageBasedLighting.skybox */,
 				16B1611B2BBB70EA007BEA9E /* Assets.xcassets */,
 				16B161202BBB70EA007BEA9E /* Info.plist */,
@@ -96,7 +101,6 @@
 		16B1610F2BBB70E8007BEA9E /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				16B161102BBB70E8007BEA9E /* RealityKitContent */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
@@ -117,6 +121,15 @@
 			path = Presenting3DContentTests;
 			sourceTree = "<group>";
 		};
+		16B161332BBB711E007BEA9E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				167214492BC0693000DC716B /* mega_man.usdz */,
+				1672144B2BC0839800DC716B /* mega_man.HEIC */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,7 +147,6 @@
 			);
 			name = Presenting3DContent;
 			packageProductDependencies = (
-				16B161112BBB70E8007BEA9E /* RealityKitContent */,
 			);
 			productName = Presenting3DContent;
 			productReference = 16B1610C2BBB70E8007BEA9E /* Presenting3DContent.app */;
@@ -203,6 +215,8 @@
 			files = (
 				16B1611C2BBB70EA007BEA9E /* Assets.xcassets in Resources */,
 				16B1611F2BBB70EA007BEA9E /* Preview Assets.xcassets in Resources */,
+				1672144A2BC0693000DC716B /* mega_man.usdz in Resources */,
+				1672144C2BC0839800DC716B /* mega_man.HEIC in Resources */,
 				16B1611A2BBB70E9007BEA9E /* ImageBasedLighting.skybox in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,6 +238,7 @@
 				16B161162BBB70E9007BEA9E /* ContentView.swift in Sources */,
 				16B161142BBB70E8007BEA9E /* Presenting3DContentApp.swift in Sources */,
 				16B161182BBB70E9007BEA9E /* ImmersiveView.swift in Sources */,
+				167214462BC0531800DC716B /* Model3DExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,13 +505,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		16B161112BBB70E8007BEA9E /* RealityKitContent */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = RealityKitContent;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 16B161042BBB70E8007BEA9E /* Project object */;
 }
