@@ -36,6 +36,14 @@ struct ContentView: View {
                 Text("Model 3D Rotation")
                     .font(.largeTitle)
             }
+            VStack {
+                Model3DDragGestureView(named: "mega_man") {
+                    ProgressView()
+                }
+                .frame(width: 200, height: 200)
+            Text("Model 3D Drag Rotation")
+                .font(.largeTitle)
+            }
         }
         .onChange(of: showImmersiveSpace) { _, newValue in
             Task {
