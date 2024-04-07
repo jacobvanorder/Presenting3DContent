@@ -41,8 +41,16 @@ struct ContentView: View {
                     ProgressView()
                 }
                 .frame(width: 200, height: 200)
-            Text("Model 3D Drag Rotation")
-                .font(.largeTitle)
+                Text("Model 3D Drag Rotation")
+                    .font(.largeTitle)
+            }
+            VStack {
+                Model3DRotateGestureView(named: "mega_man") {
+                    ProgressView()
+                }
+                    .frame(width: 200, height: 200)
+                Text("Model 3D Rotation Gesture")
+                    .font(.largeTitle)
             }
         }
         .onChange(of: showImmersiveSpace) { _, newValue in
